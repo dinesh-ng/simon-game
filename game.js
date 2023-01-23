@@ -7,7 +7,7 @@ var highScore = 0;
 $(".btn").on("click", function (params) {
   var id = $(this).attr("id");
   highScore = Math.max(highScore, level);
-  $("#highscore").text("Highscore : " + highScore);
+  $("#highscore").text("High Score : " + highScore);
   userClickedPattern.push(id);
   checkAnswer(id, userClickedPattern.length);
   //   console.log(userClickedPattern);
